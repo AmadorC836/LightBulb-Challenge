@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Bulb On/Off</title>
+<script type="text/javascript">
+function light (show){
+
+    var pic;
+    if(show==0){
+        pic="https://c8.alamy.com/comp/2A428DP/vector-3d-realistic-off-light-bulb-icon-closeup-isolated-on-white-background-design-template-clipart-glowing-incandescent-filament-lamps-2A428DP.jpg";
+    }
+    else{
+pic="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/lightbulb_on.png"
+    }
+    document.getElementById('bulb').src = pic;
+}
+</script>
+    </head>
+    <body>
+<h1>Bulb On/Off</h1>
+
+<img id="bulb" src="https://d1nhio0ox7pgb.cloudf ront.net/_img/v_collection_png/512x512/shadow/lightbulb_on.png" width="300">
+<p>
+    <button type="button" onclick="light(1)">Light On </button>
+    <button type="button" onclick="light(0)">Light Off </button>
+</p>
+    </body>
+</html>
